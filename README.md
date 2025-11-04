@@ -4,7 +4,7 @@
 
 **Genre:** Narrative Simulation / Driving Adventure / Slice of Life
 **Team Members:** Itzhak Bista, Adir Ofir
-[Wiki Page with Formal Elements](https://github.com/Computer-games-development-123/Command-Desk/wiki/Formal-Elements-and-Market-Research)
+[Wiki Page with Formal Elements](https://github.com/Computer-games-development-123/Taxi-Stories/wiki/Formal-Elements-and-Market-Research)
 
 ### 🕹️ Short Description
 
