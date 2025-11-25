@@ -11,8 +11,6 @@ public class DestinationPoint : MonoBehaviour
             rideManager = FindFirstObjectByType<RideManager>();
         }
 
-        // start hidden until passenger picked up
-        gameObject.SetActive(false);
     }
 
     void OnTriggerEnter2D(Collider2D other)

@@ -88,7 +88,10 @@ public class RideManager : MonoBehaviour
             rideStatusText.text = "Drive to destination";
 
         if (destinationPoint != null)
+        {
             destinationPoint.SetActive(true);
+        }
+            
     }
 
 

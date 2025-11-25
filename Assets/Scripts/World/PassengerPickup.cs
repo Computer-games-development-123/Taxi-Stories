@@ -22,7 +22,7 @@ public class PassengerPickup : MonoBehaviour
         {
             pickedUp = true;
             rideManager.OnPassengerPickedUp();
-            gameObject.SetActive(false); // hide pickup point
+            gameObject.SetActive(false);
         }
     }
 

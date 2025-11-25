@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7688ee02f9efe3b4fbda13c3c694e85c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PassengerPickup
-  rideManager: {fileID: 0}
+  rideManager: {fileID: 713976831}
 --- !u!58 &97815311
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1313,7 +1313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c52ee210677defe4f8c51bc43e9e5322, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestinationPoint
-  rideManager: {fileID: 0}
+  rideManager: {fileID: 713976831}
 --- !u!1 &1244512929
 GameObject:
   m_ObjectHideFlags: 0
