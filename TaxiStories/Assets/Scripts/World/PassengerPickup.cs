@@ -25,4 +25,11 @@ public class PassengerPickup : MonoBehaviour
             gameObject.SetActive(false); // hide pickup point
         }
     }
+
+    public void ResetPickup()
+    {
+        pickedUp = false;
+        gameObject.SetActive(true);
+    }
+
 }

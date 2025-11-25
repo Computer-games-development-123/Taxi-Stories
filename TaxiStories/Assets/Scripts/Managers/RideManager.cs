@@ -108,9 +108,9 @@ public class RideManager : MonoBehaviour
 
         money += baseFare + qualityBonus + timeBonus;
 
-        if (rideQuality > 80)      reputation += 2;
+        if (rideQuality > 80) reputation += 2;
         else if (rideQuality > 40) reputation += 1;
-        else                       reputation -= 1;
+        else reputation -= 1;
 
         if (!onTime) reputation -= 1;
         if (passengerDialogue != null)
@@ -118,9 +118,9 @@ public class RideManager : MonoBehaviour
             passengerDialogue.ShowDialogue("So, how was the ride? The city is crazy today, right?");
         }
 
-        if (discomfort > 80)      reputation -= 2;
+        if (discomfort > 80) reputation -= 2;
         else if (discomfort > 40) reputation -= 1;
-        else                      reputation += 1;
+        else reputation += 1;
 
         UpdateUI();
 
@@ -145,6 +145,7 @@ public class RideManager : MonoBehaviour
         rideActive = false;
         currentRideTime = 0f;
         rideQuality = 100;
+        discomfort = 0;
 
         UpdateUI();
 
@@ -153,10 +154,16 @@ public class RideManager : MonoBehaviour
 
         Vector2 randomPos = new Vector2(Random.Range(-8f, 8f), Random.Range(-4f, 4f));
         passengerPoint.transform.position = randomPos;
-        passengerPoint.SetActive(true);
+
+        var pickup = passengerPoint.GetComponent<PassengerPickup>();
+        if (pickup != null)
+        {
+            pickup.ResetPickup();
+        }
 
         destinationPoint.SetActive(false);
     }
+
 
     public void AddDiscomfort(int amount)
     {
