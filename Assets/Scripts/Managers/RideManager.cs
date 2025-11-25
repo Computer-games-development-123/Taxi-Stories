@@ -91,7 +91,7 @@ public class RideManager : MonoBehaviour
         {
             destinationPoint.SetActive(true);
         }
-            
+
     }
 
 
